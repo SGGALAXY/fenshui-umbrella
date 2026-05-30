@@ -214,11 +214,56 @@ ONLY the small central metal finial is visible. NO pole / NO handle in front of 
 
 ---
 
+### 迭代 9 · 板块过渡柔化（视觉连贯性优化）
+
+**反馈来源**：团队评审认为各板块之间虽然内容完整，但滚动时部分边界仍显得生硬；
+首次尝试把中间过场压缩为较短"薄雾桥"后，又发现板块被压短、内容节奏受影响。
+
+**AI 初稿（有缺陷）：**
+```css
+.chapter-bridge.bridge-mist {
+  min-height: clamp(150px, 24vh, 260px);
+  margin: -34px 0 -126px;
+}
+.chapter-bridge.bridge-mist + .section {
+  padding-top: clamp(48px, 7vw, 96px);
+}
+.bridge-mist .bridge-inner p {
+  display: none;
+}
+```
+
+**团队优化后：** 保留原有章节高度和文案层级，只在板块顶部/底部叠加暗色渐变，
+并对部分过场背景加轻微虚化与雾化遮罩，让内容衔接更柔和，但不压缩任何板块。
+```css
+.section::before {
+  height: clamp(70px, 9vw, 150px);
+  background: linear-gradient(180deg, rgba(16, 11, 8, 0.86), transparent);
+}
+.section::after {
+  height: clamp(80px, 11vw, 190px);
+  background: linear-gradient(180deg, transparent, rgba(16, 11, 8, 0.88));
+}
+.chapter-bridge.bridge-mist {
+  min-height: clamp(320px, 48vh, 540px);
+  margin: -1px 0 -56px;
+}
+.bridge-mist .bridge-bg {
+  filter: saturate(0.7) brightness(0.46) blur(1px);
+  opacity: 0.62;
+}
+```
+
+**结果**：板块尺寸、文案信息量与滚动节奏保持不变；边界从硬切变为暗场渐变，
+桌面端与移动端均无横向溢出，浏览器控制台无报错。
+
+---
+
 ## 四、合规自查清单
 
 - [x] 留存全流程 prompt 原文（`docs/prompts/`，26 份：25 张正式配图 + 1 个 logo 备选）
 - [x] 记录 AI 生成内容与生成参数
-- [x] 提供团队修改迭代的前后对比代码（迭代 1~4）
+- [x] 提供团队修改迭代的前后对比代码（迭代 1~9）
 - [x] AI 生成图片标注为示意性素材，不冒充真实照片 / 个人
 - [x] 核心代码逻辑全员可讲解（JS 已逐块中文注释）
 - [ ] 答辩前补充 AI 操作过程截图至 `docs/screenshots/`（待补）
