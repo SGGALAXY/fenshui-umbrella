@@ -1,0 +1,1 @@
+A clean minimal flat vector emblem of a single stylised open Chinese oil-paper umbrella seen from the front, drawn with elegant thin even line strokes showing the radial ribs and the central pole, in one solid deep vermilion red colour on a fully transparent background, centered, balanced, modern heritage logo mark, no gradient, no shadow, no text, no watermark.

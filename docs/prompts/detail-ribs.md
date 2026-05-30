@@ -1,0 +1,1 @@
+Cinematic still-life photograph: a bundle of slender split bamboo umbrella ribs tied with cord resting on a weathered dark wooden surface in warm directional workshop light, a few loose ribs beside it, earthy muted tones, shallow depth of field, fine-art photography, photorealistic, ultra-detailed. No text, no watermark.

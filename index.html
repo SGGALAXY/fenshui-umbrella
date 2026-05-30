@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="分水·寻伞 —— 泸州分水油纸伞非遗影像档案。以独立摄影集的方式，呈现一柄油纸伞的材料、工序与纹样。国家级非物质文化遗产。" />
+  <meta name="keywords" content="油纸伞,分水油纸伞,泸州油纸伞,非遗,非物质文化遗产,传统手工艺,摄影" />
+  <title>分水·寻伞 | 泸州分水油纸伞非遗影像档案</title>
+
+  <!-- 站点图标（内联 SVG 油纸伞） -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M24 5C12 5 4 14 3 23h42C44 14 36 5 24 5Z' fill='%23B23A2E'/%3E%3Cpath d='M24 5v31q0 6-6 6' stroke='%23B23A2E' stroke-width='2.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" type="image/svg+xml" />
+
+  <!-- Bootstrap 5.3 框架 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- 字体：思源宋体 / 思源黑体 / 毛笔题字 / 等宽（档案编号与图注） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="120" tabindex="0">
+
+  <!-- 顶部阅读进度条 -->
+  <div class="read-progress" id="readProgress" aria-hidden="true"></div>
+
+  <!-- ============ 导航栏（Bootstrap：navbar）============ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top site-nav">
+    <div class="container">
+      <a class="navbar-brand brand-wordmark" href="#home">
+        <svg class="brand-logo" viewBox="0 0 48 48" width="30" height="30" aria-hidden="true" focusable="false">
+          <path d="M24 5C12 5 4 14 3 23h42C44 14 36 5 24 5Z" fill="currentColor" />
+          <path d="M3 23q3 5 6 0t6 0 6 0 6 0 6 0 6 0" fill="currentColor" />
+          <path d="M24 5v31q0 6-6 6q-4 0-4-3" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" />
+          <path d="M24 6 9 22M24 6l15 16M24 6v16" stroke="#faf6ef" stroke-width="1.1" opacity="0.6" />
+        </svg>
+        <span class="brand-copy">
+          <strong>分水·寻伞</strong>
+          <small>FENSHUI UMBRELLA ARCHIVE</small>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="展开导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navItems">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#origin">缘起</a></li>
+          <li class="nav-item"><a class="nav-link" href="#craft">工序</a></li>
+          <li class="nav-item"><a class="nav-link" href="#works">伞面</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notes">源流</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quiz">问答</a></li>
+          <li class="nav-item"><a class="nav-link" href="#guestbook">留言</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ 首页 Hero ============ -->
+  <header id="home" class="hero">
+    <div class="hero-bg" style="background-image: url('images/hero.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <aside class="hero-register reveal">
+        <span>ARCHIVE NO.</span>
+        <strong>Ⅷ-140</strong>
+        <em>油纸伞制作技艺</em>
+      </aside>
+      <p class="eyebrow light reveal">国家级非物质文化遗产 · 四川泸州 · 影像档案</p>
+      <h1 class="hero-title reveal">一柄油纸伞<br />撑起千年烟雨</h1>
+      <p class="hero-sub reveal">
+        以独立摄影的方式，把竹骨、棉线、皮纸、桐油与手绘纹样，
+        整理成一组可浏览、可放大的非遗影像档案。
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#craft" class="btn btn-cinnabar">查看六道工序 <i class="bi bi-arrow-right"></i></a>
+        <button class="btn btn-line" type="button" data-bs-toggle="modal" data-bs-target="#sourceModal">资料来源</button>
+      </div>
+    </div>
+    <div class="hero-caption reveal">
+      <span>Fig.01</span>
+      <p>暮色伞阵：油纸透光，伞骨在灯影里若隐若现。</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ 01 缘起 · 沉浸式开场 ============ -->
+    <section id="origin" class="section-origin">
+      <div class="origin-bg" style="background-image:url('images/bg-origin.png')"></div>
+      <div class="origin-veil"></div>
+      <div class="container origin-inner">
+        <div class="origin-copy reveal">
+          <p class="eyebrow light">01 — 缘起 / ORIGIN</p>
+          <h2 class="origin-title">烟雨里走来的<br />一柄油纸伞</h2>
+          <p class="origin-lead">
+            它生于四川泸州分水岭，以竹为骨、以皮纸为面、以桐油为魂。
+            撑开是半透的暖光，收拢是一段被手掌记住的时光——
+            这是一门"撑在手里的非遗"。
+          </p>
+        </div>
+        <!-- 档案要点：原创版式，非表格照搬 -->
+        <ul class="origin-facts reveal">
+          <li><span class="fk">编号</span><strong class="fv">Ⅷ-140</strong><em class="fn">传统技艺 · 油纸伞制作技艺</em></li>
+          <li><span class="fk">列级</span><strong class="fv">2008</strong><em class="fn">第二批国家级非遗名录</em></li>
+          <li><span class="fk">工序</span><strong class="fv">90<small>+</small></strong><em class="fn">道，全凭手作</em></li>
+          <li><span class="fk">寓意</span><strong class="fv">有子</strong><em class="fn">"油纸"谐音 · 团圆辟邪</em></li>
+        </ul>
+      </div>
+      <span class="origin-watermark" aria-hidden="true">伞</span>
+    </section>
+
+    <!-- ============ 过场：从缘起进入光影 ============ -->
+    <section class="chapter-bridge bridge-light" aria-label="进入光影轮播">
+      <div class="bridge-bg" style="background-image:url('images/carousel-2.png')"></div>
+      <div class="bridge-veil"></div>
+      <div class="container bridge-inner">
+        <span class="bridge-kicker">PLATE / LIGHT</span>
+        <h2>先看伞的光，再看伞的骨。</h2>
+        <p>缘起是远景，光影是第一层近看。伞面把颜色与雨意铺开，下一段再把镜头推到手作现场。</p>
+      </div>
+    </section>
+
+    <!-- ============ 光影 · 轮播（Bootstrap：carousel）============ -->
+    <section class="section-carousel">
+      <div id="lightCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/carousel-2.png" class="d-block w-100 carousel-zoom" alt="数百把油纸伞组成的彩色伞顶"
+                 data-img="images/carousel-2.png" data-tag="PLATE Ⅰ" data-title="伞顶如花海" data-desc="百伞悬空，是光与色的盛宴。" />
+            <div class="carousel-caption"><span class="eyebrow light">PLATE Ⅰ</span><h3>伞顶如花海</h3></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-1.png" class="d-block w-100 carousel-zoom" alt="烟雨水乡中撑伞而行的女子"
+                 data-img="images/carousel-1.png" data-tag="PLATE Ⅱ" data-title="烟雨中的诗意" data-desc="一伞一人，便是一幅江南水墨。" />
+            <div class="carousel-caption"><span class="eyebrow light">PLATE Ⅱ</span><h3>烟雨中的诗意</h3></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-3.png" class="d-block w-100 carousel-zoom" alt="油纸伞伞面手绘牡丹特写"
+                 data-img="images/carousel-3.png" data-tag="PLATE Ⅲ" data-title="纸上有乾坤" data-desc="一笔一画，皆是匠心温度。" />
+            <div class="carousel-caption"><span class="eyebrow light">PLATE Ⅲ</span><h3>纸上有乾坤</h3></div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#lightCarousel" data-bs-slide-to="0" class="active" aria-label="第一张"></button>
+          <button type="button" data-bs-target="#lightCarousel" data-bs-slide-to="1" aria-label="第二张"></button>
+          <button type="button" data-bs-target="#lightCarousel" data-bs-slide-to="2" aria-label="第三张"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#lightCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">上一张</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#lightCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">下一张</span></button>
+      </div>
+    </section>
+
+    <!-- ============ 过场：从光影进入工序 ============ -->
+    <section class="chapter-bridge bridge-process" aria-label="进入工序标本">
+      <div class="bridge-bg" style="background-image:url('images/craft-2-thread.png')"></div>
+      <div class="bridge-veil"></div>
+      <div class="container bridge-inner">
+        <span class="bridge-kicker">02 / PROCESS</span>
+        <h2>花海落下，留下竹、线与纸。</h2>
+        <p>从伞阵的整体气氛收束到工匠手边，每一次削、穿、裱、绘，都让一把伞慢慢成形。</p>
+      </div>
+    </section>
+
+    <!-- ============ 02 工序标本（左索引 + 右交错记录）============ -->
+    <section id="craft" class="section section-craft">
+      <div class="container">
+        <div class="craft-layout">
+          <!-- 左侧吸顶工序索引 -->
+          <aside class="craft-index reveal" aria-label="工序导航">
+            <p class="eyebrow">02 — 工序标本 / PROCESS</p>
+            <h2 class="sec-title">六个动作，<br />构成一把伞的生命线。</h2>
+            <div class="craft-jumps">
+              <button class="craft-jump active" type="button" data-target="step-01">01　选竹</button>
+              <button class="craft-jump" type="button" data-target="step-02">02　制骨</button>
+              <button class="craft-jump" type="button" data-target="step-03">03　穿线</button>
+              <button class="craft-jump" type="button" data-target="step-04">04　裱面</button>
+              <button class="craft-jump" type="button" data-target="step-05">05　绘花</button>
+              <button class="craft-jump" type="button" data-target="step-06">06　上油</button>
+            </div>
+            <span class="craft-wm" aria-hidden="true">序</span>
+          </aside>
+
+          <!-- 右侧工序记录流 -->
+          <div class="craft-stream">
+            <article class="craft-record reveal" id="step-01">
+              <figure class="plate">
+                <button class="plate-open" type="button" data-img="images/craft-1-bamboo.png" data-title="选竹 · 材料判断" data-desc="以直度、韧性与竹节状态判断竹材能否成为伞骨。">
+                  <img src="images/craft-1-bamboo.png" alt="匠人挑选并劈制竹材" />
+                </button>
+                <figcaption><span>Fig.02</span> 选竹：以纹理、竹节与手感判断材料是否合适。</figcaption>
+              </figure>
+              <div class="record-copy">
+                <span class="record-no">01</span>
+                <h3>选竹</h3>
+                <p>伞骨从选竹开始。竹要直、韧、轻，能承受反复开合，又不让整把伞显得笨重。老匠人凭纹理、竹节与手感，就能判断一根竹的去留。</p>
+                <em>material · bamboo grain / dry fiber / hand inspection</em>
+              </div>
+            </article>
+
+            <article class="craft-record reverse reveal" id="step-02">
+              <figure class="plate">
+                <button class="plate-open" type="button" data-img="images/craft-ribs.png" data-title="制骨 · 结构精度" data-desc="削篾、修边、打孔、校正，全凭手上的稳定尺度。">
+                  <img src="images/craft-ribs.png" alt="匠人削制竹制伞骨" />
+                </button>
+                <figcaption><span>Fig.03</span> 制骨：细薄竹篾被削成稳定、均匀、可开合的结构。</figcaption>
+              </figure>
+              <div class="record-copy">
+                <span class="record-no">02</span>
+                <h3>制骨</h3>
+                <p>制骨决定伞的结构精度。削篾、修边、打孔与校正都要求手上有稳定的尺度——过厚则笨重，过薄则易变形断裂。</p>
+                <em>tool · hand plane / awl / bamboo shaving</em>
+              </div>
+            </article>
+
+            <article class="craft-record reveal" id="step-03">
+              <figure class="plate">
+                <button class="plate-open" type="button" data-img="images/craft-2-thread.png" data-title="穿线 · 结构语言" data-desc="棉线穿过伞骨小孔，围绕伞头形成张力，俗称满穿伞、网伞。">
+                  <img src="images/craft-2-thread.png" alt="匠人用棉线穿接伞骨" />
+                </button>
+                <figcaption><span>Fig.04</span> 穿线：线不是装饰，而是让伞骨成为整体的结构语言。</figcaption>
+              </figure>
+              <div class="record-copy">
+                <span class="record-no">03</span>
+                <h3>穿线</h3>
+                <p>五色棉线穿过伞骨小孔，围绕伞头往复穿绕，多达数千针，俗称"满穿伞""网伞"。线的松紧直接改变伞面弧度与开合手感。</p>
+                <em>structure · cotton thread / radial ribs / wooden hub</em>
+              </div>
+            </article>
+
+            <article class="craft-record reverse reveal" id="step-04">
+              <figure class="plate">
+                <button class="plate-open" type="button" data-img="images/craft-paste.png" data-title="裱面 · 纸与竹" data-desc="皮纸平整服帖地贴上伞架，又要保留纤维质感。">
+                  <img src="images/craft-paste.png" alt="匠人把皮纸裱贴到伞架上" />
+                </button>
+                <figcaption><span>Fig.05</span> 裱面：纸面贴合伞架，皱褶与张力都须被控制。</figcaption>
+              </figure>
+              <div class="record-copy">
+                <span class="record-no">04</span>
+                <h3>裱面</h3>
+                <p>裱面是纸与竹骨的第一次完整结合。皮纸要平整服帖，又要保留纤维的呼吸感；这一步决定了后续绘花、上油的整体观感。</p>
+                <em>surface · handmade paper / paste brush / rib shadow</em>
+              </div>
+            </article>
+
+            <article class="craft-record reveal" id="step-05">
+              <figure class="plate">
+                <button class="plate-open" type="button" data-img="images/craft-3-paint.png" data-title="绘花 · 文化转译" data-desc="花鸟、山水与吉祥纹样，把遮雨器物转为可赠、可藏的文化对象。">
+                  <img src="images/craft-3-paint.png" alt="匠人在伞面绘制纹样" />
+                </button>
+                <figcaption><span>Fig.06</span> 绘花：图案让器物进入礼俗、美学与地方记忆。</figcaption>
+              </figure>
+              <div class="record-copy">
+                <span class="record-no">05</span>
+                <h3>绘花</h3>
+                <p>伞面常见花鸟、山水与吉祥纹样。绘花不是表面装饰——它把一件遮雨的器物，转换为可赠礼、可陈设、可被记住的文化对象。</p>
+                <em>visual · mineral pigment / brush trace / floral motif</em>
+              </div>
+            </article>
+
+            <article class="craft-record reverse reveal" id="step-06">
+              <figure class="plate">
+                <button class="plate-open" type="button" data-img="images/craft-4-oil.png" data-title="上油 · 终饰" data-desc="桐油成膜防水，并赋予伞面温润的半透明光泽。">
+                  <img src="images/craft-4-oil.png" alt="匠人为伞面刷桐油" />
+                </button>
+                <figcaption><span>Fig.07</span> 上油：纸面获得防水性，也出现油纸伞独有的温润光泽。</figcaption>
+              </figure>
+              <div class="record-copy">
+                <span class="record-no">06</span>
+                <h3>上油</h3>
+                <p>桐油成膜后，伞面可以遮雨，也会形成半透明的暖色光泽。至此，纸、竹、线、画从分散的材料，变成一件完整的器物。</p>
+                <em>finish · tung oil sheen / drying canopy / warm glow</em>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 材料细部（3 图）============ -->
+    <section class="section-details">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">附 — 材料细部 / DETAILS</p>
+          <h2 class="sec-title">技艺，藏在材料的褶皱里。</h2>
+        </div>
+        <div class="detail-grid row g-4 mx-0">
+          <figure class="plate reveal col-12 col-md-4">
+            <button class="plate-open" type="button" data-img="images/detail-hub.png" data-title="伞头 · 穿线" data-tag="DETAIL" data-desc="数千针五色棉线在伞头汇聚成放射状的结构。">
+              <img src="images/detail-hub.png" alt="油纸伞伞头棉线穿接特写" />
+            </button>
+            <figcaption><span>Fig.08</span> 伞头：棉线在此汇聚，是整把伞的力学核心。</figcaption>
+          </figure>
+          <figure class="plate reveal col-12 col-md-4">
+            <button class="plate-open" type="button" data-img="images/detail-ribs.png" data-title="竹骨 · 标本" data-tag="DETAIL" data-desc="劈好的伞骨捆扎待用，粗细均匀是关键。">
+              <img src="images/detail-ribs.png" alt="捆扎的竹制伞骨特写" />
+            </button>
+            <figcaption><span>Fig.09</span> 竹骨：直、韧、轻，决定伞的弹性与手感。</figcaption>
+          </figure>
+          <figure class="plate reveal col-12 col-md-4">
+            <button class="plate-open" type="button" data-img="images/detail-brushes.png" data-title="颜料 · 笔" data-tag="DETAIL" data-desc="矿物颜料与毛笔，是伞面纹样的起点。">
+              <img src="images/detail-brushes.png" alt="传统毛笔与矿物颜料特写" />
+            </button>
+            <figcaption><span>Fig.10</span> 笔与色：矿物颜料落于纸上，伞便有了表情。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 过场：从工序进入伞面 ============ -->
+    <section class="chapter-bridge bridge-gallery" aria-label="进入伞面影像墙">
+      <div class="bridge-bg" style="background-image:url('images/work-peony.png')"></div>
+      <div class="bridge-veil"></div>
+      <div class="container bridge-inner">
+        <span class="bridge-kicker">03 / IMAGE WALL</span>
+        <h2>工序结束，纹样重新展开。</h2>
+        <p>材料和动作藏进伞面之后，牡丹、荷、山水、龙凤便成为另一种可被阅读的非遗语言。</p>
+      </div>
+    </section>
+
+    <!-- ============ 03 伞面影像墙 ============ -->
+    <section id="works" class="section section-works">
+      <div class="container">
+        <div class="sec-head reveal" data-no="03">
+          <p class="eyebrow">03 — 伞面影像墙 / IMAGE WALL</p>
+          <h2 class="sec-title">八张伞面，<br />一面会呼吸的影像墙。</h2>
+          <p class="sec-desc">点击任意一帧，可放大端详伞面纹样的笔触与肌理。</p>
+        </div>
+        <!-- 影像墙：错落拼贴，由 JS 渲染 -->
+        <div class="image-wall" id="imageWall"></div>
+      </div>
+    </section>
+
+    <!-- ============ 过场：从伞面进入源流 ============ -->
+    <section class="divider-band chapter-bridge bridge-lineage" aria-label="进入源流与传承">
+      <div class="bridge-bg divider-img" style="background-image:url('images/hero-2.png')"></div>
+      <div class="bridge-veil"></div>
+      <div class="container bridge-inner">
+        <span class="bridge-kicker">Fig.11 / LINEAGE</span>
+        <h2>一把伞挂在墙上，也挂在时间里。</h2>
+        <p>墙影一伞，收住光与影；再往下看，是从唐宋、明清到今天的技艺流转。</p>
+      </div>
+    </section>
+
+    <!-- ============ 04 源流与传承 · 时间轴 ============ -->
+    <section id="notes" class="section section-timeline">
+      <div class="container">
+        <div class="sec-head reveal" data-no="04">
+          <p class="eyebrow">04 — 源流与传承 / LINEAGE</p>
+          <h2 class="sec-title">从唐宋走到今天的<br />一柄油纸伞。</h2>
+        </div>
+        <div class="tl-layout row g-5 align-items-start mx-0">
+          <aside class="tl-aside reveal col-12 col-lg-5">
+            <p class="quote-lead">在分水，老师傅常念叨这样一句话——</p>
+            <blockquote class="big-quote">做伞这行，急不得。一把伞要过手九十多道，差一道，它就不是分水的伞了。</blockquote>
+            <span class="seal seal-lg quote-seal" aria-hidden="true">分水</span>
+            <p class="tl-now-text">
+              如今，国家级非物质文化遗产代表性传承人 <strong>毕六福</strong> 仍坚守古法、带徒授艺；
+              在文创与文旅的推动下，油纸伞正从日用器物，走向收藏、装置与可被记住的文化符号。
+            </p>
+
+            <div class="accordion lineage-accordion" id="lineageAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="lineageHeadingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#lineageCollapseOne" aria-expanded="true" aria-controls="lineageCollapseOne">
+                    为什么不使用 AI 人物肖像？
+                  </button>
+                </h3>
+                <div id="lineageCollapseOne" class="accordion-collapse collapse show" aria-labelledby="lineageHeadingOne" data-bs-parent="#lineageAccordion">
+                  <div class="accordion-body">
+                    传承人是真实存在的文化主体，页面只做客观文字说明，不用虚构肖像替代真人形象，避免误导与肖像伦理风险。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="lineageHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lineageCollapseTwo" aria-expanded="false" aria-controls="lineageCollapseTwo">
+                    分水油纸伞的核心工艺是什么？
+                  </button>
+                </h3>
+                <div id="lineageCollapseTwo" class="accordion-collapse collapse" aria-labelledby="lineageHeadingTwo" data-bs-parent="#lineageAccordion">
+                  <div class="accordion-body">
+                    关键在竹骨、穿线、裱纸、绘花与桐油防水的连续手作。网站用六道代表工序展示完整流程，而不是把 90 余道细节全部展开。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="lineageHeadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lineageCollapseThree" aria-expanded="false" aria-controls="lineageCollapseThree">
+                    AI 生成素材如何合规使用？
+                  </button>
+                </h3>
+                <div id="lineageCollapseThree" class="accordion-collapse collapse" aria-labelledby="lineageHeadingThree" data-bs-parent="#lineageAccordion">
+                  <div class="accordion-body">
+                    所有图片均标注为示意性艺术图像，prompt 原文保存在 docs/prompts/，并由团队筛选、修正和说明来源。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="col-12 col-lg-7">
+            <ol class="timeline reveal">
+              <li class="tl-item">
+                <span class="tl-era">唐宋 · 流行</span>
+                <h3>纸伞入寻常</h3>
+                <p>油纸伞雏形可上溯更早，至唐宋已在民间广泛使用，成为遮阳避雨的日常器物。</p>
+              </li>
+              <li class="tl-item">
+                <span class="tl-era">明清 · 成熟</span>
+                <h3>工艺南传入川</h3>
+                <p>制伞工艺日臻成熟，并随商贸与移民传入四川泸州一带，分水岭逐渐成为制伞集中地。</p>
+              </li>
+              <li class="tl-item">
+                <span class="tl-era">近现代 · 兴盛</span>
+                <h3>分水之名</h3>
+                <p>分水油纸伞以"满穿"伞骨与手绘伞面著称，曾是川南婚嫁与馈赠中颇有分量的物件。</p>
+              </li>
+              <li class="tl-item is-hi">
+                <span class="tl-era">2008 · 列级</span>
+                <h3>列入国家级非遗</h3>
+                <p>泸州油纸伞制作技艺入选第二批国家级非物质文化遗产名录，项目编号 Ⅷ-140。</p>
+              </li>
+              <li class="tl-item">
+                <span class="tl-era">当代 · 新生</span>
+                <h3>从日用到符号</h3>
+                <p>在传承人带徒授艺与文创、文旅推动下，油纸伞走向收藏、装置与当代设计语境。</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 过场：从源流进入问答 ============ -->
+    <section class="chapter-bridge bridge-quiz" aria-label="进入知识问答">
+      <div class="bridge-bg" style="background-image:url('images/bg-dark.png')"></div>
+      <div class="bridge-veil"></div>
+      <div class="container bridge-inner">
+        <span class="bridge-kicker">05 / QUIZ</span>
+        <h2>读过一段传承，再回答三个问题。</h2>
+        <p>知识问答不是考试，而是把刚刚看见的工艺、年代与材料，变成一次短暂停留。</p>
+      </div>
+    </section>
+
+    <!-- ============ 05 知识问答（暗调沉浸）============ -->
+    <section id="quiz" class="section section-quiz">
+      <div class="quiz-bg" style="background-image:url('images/bg-dark.png')"></div>
+      <div class="quiz-veil"></div>
+      <div class="container quiz-inner">
+        <div class="sec-head text-center reveal" data-no="05">
+          <p class="eyebrow light">05 — 知识问答 / QUIZ</p>
+          <h2 class="sec-title light">你了解油纸伞吗？</h2>
+          <p class="sec-desc light">三道小题，测测你的非遗知识。</p>
+        </div>
+        <div class="quiz-box reveal"><div id="quizBody"></div></div>
+      </div>
+    </section>
+
+    <!-- ============ 过场：从问答进入留言 ============ -->
+    <section class="chapter-bridge bridge-register" aria-label="进入观展留言">
+      <div class="bridge-bg" style="background-image:url('images/detail-brushes.png')"></div>
+      <div class="bridge-veil"></div>
+      <div class="container bridge-inner">
+        <span class="bridge-kicker">06 / REGISTER</span>
+        <h2>最后，把观展感受写进访客簿。</h2>
+        <p>一条留言像档案馆里的一枚小标签，记录你与这把油纸伞相遇的时间。</p>
+      </div>
+    </section>
+
+    <!-- ============ 06 观展留言（表单 + 留言墙）============ -->
+    <section id="guestbook" class="section section-guestbook">
+      <div class="container">
+        <div class="message-layout row g-5 align-items-start mx-0">
+          <div class="message-intro reveal col-12 col-lg-5">
+            <p class="eyebrow">06 — 观展留言 / REGISTER</p>
+            <h2 class="sec-title">留言，<br />像档案馆的访客簿。</h2>
+            <p class="sec-desc">校验通过后，留言会即时写入右侧访客簿（JavaScript 动态渲染）。</p>
+            <form id="guestForm" class="guest-form needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="gName" class="form-label">昵称</label>
+                <input type="text" class="form-control" id="gName" required maxlength="20" placeholder="如何称呼你" />
+                <div class="invalid-feedback">请填写昵称（20 字以内）。</div>
+              </div>
+              <div class="mb-3">
+                <label for="gRole" class="form-label">身份</label>
+                <select class="form-select" id="gRole" required>
+                  <option value="" selected disabled>请选择</option>
+                  <option>第一次了解</option>
+                  <option>喜欢传统手工艺</option>
+                  <option>课程学习展示</option>
+                  <option>想参与传播</option>
+                </select>
+                <div class="invalid-feedback">请选择一个身份。</div>
+              </div>
+              <div class="mb-3">
+                <label for="gMsg" class="form-label">留言</label>
+                <textarea class="form-control" id="gMsg" rows="3" required minlength="4" maxlength="120" placeholder="写下你对油纸伞的观察……"></textarea>
+                <div class="invalid-feedback">请填写留言（4–120 字）。</div>
+              </div>
+              <button type="submit" class="btn btn-cinnabar w-100">写入访客簿</button>
+            </form>
+          </div>
+          <div class="message-wall-col reveal col-12 col-lg-7">
+            <h3 class="wall-title">访客簿</h3>
+            <ul id="messageWall" class="message-wall" aria-live="polite"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="site-footer">
+    <div class="footer-bg" style="background-image:url('images/bg-dark.png')"></div>
+    <div class="footer-veil"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-brand brand-wordmark">分水·寻伞 <span class="seal" aria-hidden="true">分水</span></p>
+          <p class="footer-tagline">一柄油纸伞，撑起千年烟雨。</p>
+          <p class="footer-small">Web 前端开发技术课程 · 非遗文化数字展示作业。</p>
+        </div>
+        <div class="footer-col">
+          <span class="footer-h">团队 No.1</span>
+          <ul class="footer-list">
+            <li>尹斌 · 组长 / 统筹</li>
+            <li>陈治霖 · 前端开发</li>
+            <li>陈军豪 · 内容与 UI</li>
+            <li>杨执平 · 测试与部署</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <span class="footer-h">技术栈</span>
+          <ul class="footer-list">
+            <li>HTML5 / CSS3</li>
+            <li>Bootstrap 5.3</li>
+            <li>JavaScript (ES6)</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <span class="footer-h">资料来源</span>
+          <ul class="footer-list">
+            <li>文字：泸州分水油纸伞公开非遗资料整理</li>
+            <li>影像：团队 AI 协同（GPT Image 2）生成</li>
+            <li><a class="footer-link" href="https://sggalaxy.github.io/fenshui-umbrella/" target="_blank" rel="noopener">GitHub Pages 在线访问</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 团队 No.1 · 分水·寻伞 非遗影像档案</span>
+        <span>Made with 匠心 · for 非遗传承</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 影像放大灯箱（Bootstrap：modal）-->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content lightbox-content">
+        <button type="button" class="btn-close lightbox-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+        <img src="" alt="" id="lightboxImg" class="lightbox-img" />
+        <div class="lightbox-caption">
+          <span class="eyebrow" id="lightboxTag">PLATE</span>
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDesc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 资料来源说明（Bootstrap：modal）-->
+  <div class="modal fade" id="sourceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content source-modal">
+        <div class="modal-header">
+          <h2 class="modal-title">资料与素材说明</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+        </div>
+        <div class="modal-body">
+          <p>事实信息依据"泸州分水油纸伞""国家级非物质文化遗产名录"等公开资料整理；
+            所有影像由 GPT Image 2 生成后本地保存，为契合主题的<strong>示意性艺术图像</strong>，
+            非真实历史照片，亦不指向任何真实个人。</p>
+          <table class="table source-table">
+            <tbody>
+              <tr><th>非遗项目</th><td>伞制作技艺（油纸伞制作技艺），项目编号 Ⅷ-140，2008 年第二批国家级非遗。</td></tr>
+              <tr><th>影像素材</th><td>共 25 帧 AI 生成图，prompt 原文见 <code>docs/prompts/</code> 与 <code>docs/提示词存档.md</code>。</td></tr>
+              <tr><th>技术实现</th><td>Bootstrap 5 + HTML/CSS/JS 分离 + 响应式栅格 + 原生 JS 交互。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="toTop" class="to-top" aria-label="回到顶部"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

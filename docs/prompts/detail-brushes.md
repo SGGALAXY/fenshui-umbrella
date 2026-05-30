@@ -1,0 +1,1 @@
+Cinematic still-life close-up: traditional Chinese painting brushes resting across small porcelain dishes of mineral pigment in red, ochre and ink, beside the edge of a half-painted oil-paper umbrella canopy, warm workshop light, artisanal mood, fine-art photography, photorealistic, ultra-detailed. No text, no watermark.

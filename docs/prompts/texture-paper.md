@@ -1,0 +1,1 @@
+Seamless flat top-down photograph of warm handmade mulberry rice paper (xuan paper) texture, subtle natural fibers, gentle tonal variation and soft creases, warm ivory tone, even diffuse lighting, high detail, no objects, minimal, photorealistic. No text, no watermark.
